@@ -1,0 +1,27 @@
+2026-02-04 11:53:34,453 INFO    MainThread:2733124 [wandb_setup.py:_flush():80] Current SDK version is 0.21.0
+2026-02-04 11:53:34,453 INFO    MainThread:2733124 [wandb_setup.py:_flush():80] Configure stats pid to 2733124
+2026-02-04 11:53:34,453 INFO    MainThread:2733124 [wandb_setup.py:_flush():80] Loading settings from /home/zwsllmprj/.config/wandb/settings
+2026-02-04 11:53:34,453 INFO    MainThread:2733124 [wandb_setup.py:_flush():80] Loading settings from /home/zwsllmprj/data/DiLoCo/OpenDiLoCo/open_diloco/wandb/settings
+2026-02-04 11:53:34,453 INFO    MainThread:2733124 [wandb_setup.py:_flush():80] Loading settings from environment variables
+2026-02-04 11:53:34,453 INFO    MainThread:2733124 [wandb_init.py:setup_run_log_directory():703] Logging user logs to /home/zwsllmprj/data/DiLoCo/OpenDiLoCo/open_diloco/wandb/offline-run-20260204_115334-xxib7af4/logs/debug.log
+2026-02-04 11:53:34,453 INFO    MainThread:2733124 [wandb_init.py:setup_run_log_directory():704] Logging internal logs to /home/zwsllmprj/data/DiLoCo/OpenDiLoCo/open_diloco/wandb/offline-run-20260204_115334-xxib7af4/logs/debug-internal.log
+2026-02-04 11:53:34,453 INFO    MainThread:2733124 [wandb_init.py:init():830] calling init triggers
+2026-02-04 11:53:34,453 INFO    MainThread:2733124 [wandb_init.py:init():835] wandb.init called with sweep_config: {}
+config: {'path_model': '/home/zwsllmprj/data/DiLoCo/llama/llama-150m-fresh', 'torch_compile': True, 'attn_implementation': 'sdpa', 'dataset_name_or_path': '/home/zwsllmprj/data/DiLoCo/llama', 'seq_length': 1024, 'c4_tiny': True, 'num_workers': 4, 'lr': 0.0004, 'total_batch_size': 512, 'per_device_train_batch_size': 32, 'warmup_steps': 1000, 'total_steps': 88000, 'sharding_strategy': 'NO_SHARD', 'precision': 'bf16-mixed', 'project': 'OpenDiLoCo', 'metric_logger_type': 'wandb', 'log_activations_steps': 250, 'ckpt': {'resume': None, 'interval': 4975, 'path': '8800_ckpt', 'topk': None}, 'hv': {'outer_lr': 0.7, 'local_steps': 500, 'initial_peers': ['/ip4/11.11.30.4/tcp/30002/p2p/Qmbh7opLJxFCtY22XqwETuo6bnWqijs76YXz7D69MBWEuZ'], 'host_maddrs': ['/ip4/0.0.0.0/tcp/0'], 'announce_maddrs': None, 'matchmaking_time': None, 'averaging_timeout': None, 'hivemind_compression': None, 'all_reduce_strategy': <AllReduceStrategy.WAIT_FOR_ALL: 'WAIT_FOR_ALL'>, 'timeout_waiting_for_peers': None, 'skip_load_from_peers': True, 'world_rank': 0, 'galaxy_size': 2, 'fail_rank_drop': False}, 'fake_data': False, 'max_steps': None, '_wandb': {}}
+2026-02-04 11:53:34,453 INFO    MainThread:2733124 [wandb_init.py:init():871] starting backend
+2026-02-04 11:53:34,658 INFO    MainThread:2733124 [wandb_init.py:init():874] sending inform_init request
+2026-02-04 11:53:34,664 INFO    MainThread:2733124 [wandb_init.py:init():882] backend started and connected
+2026-02-04 11:53:34,665 INFO    MainThread:2733124 [wandb_init.py:init():953] updated telemetry
+2026-02-04 11:53:34,668 INFO    MainThread:2733124 [wandb_init.py:init():977] communicating run to backend with 90.0 second timeout
+2026-02-04 11:53:34,828 INFO    MainThread:2733124 [wandb_init.py:init():1029] starting run threads in backend
+2026-02-04 11:53:34,884 INFO    MainThread:2733124 [wandb_run.py:_console_start():2458] atexit reg
+2026-02-04 11:53:34,884 INFO    MainThread:2733124 [wandb_run.py:_redirect():2306] redirect: wrap_raw
+2026-02-04 11:53:34,884 INFO    MainThread:2733124 [wandb_run.py:_redirect():2375] Wrapping output streams.
+2026-02-04 11:53:34,884 INFO    MainThread:2733124 [wandb_run.py:_redirect():2398] Redirects installed.
+2026-02-04 11:53:34,885 INFO    MainThread:2733124 [wandb_init.py:init():1075] run started, returning control to user process
+2026-02-04 12:25:40,484 INFO    MainThread:2733124 [wandb_run.py:_finish():2224] finishing run OpenDiLoCo/xxib7af4
+2026-02-04 12:25:40,484 INFO    MainThread:2733124 [wandb_run.py:_atexit_cleanup():2423] got exitcode: 0
+2026-02-04 12:25:40,484 INFO    MainThread:2733124 [wandb_run.py:_restore():2405] restore
+2026-02-04 12:25:40,485 INFO    MainThread:2733124 [wandb_run.py:_restore():2411] restore done
+2026-02-04 12:25:40,488 INFO    MainThread:2733124 [wandb_run.py:_footer_history_summary_info():3903] rendering history
+2026-02-04 12:25:40,489 INFO    MainThread:2733124 [wandb_run.py:_footer_history_summary_info():3935] rendering summary
