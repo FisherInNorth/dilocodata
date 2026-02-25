@@ -1,0 +1,195 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    python_version: 3.11.10
+    cli_version: 0.21.0
+    framework: huggingface
+    huggingface_version: 4.46.2
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1770611705
+    t:
+      1:
+      - 1
+      - 11
+      - 49
+      - 51
+      2:
+      - 1
+      - 11
+      - 49
+      - 51
+      3:
+      - 4
+      - 16
+      - 42
+      4: 3.11.10
+      5: 0.21.0
+      6: 4.46.2
+      13: linux-x86_64
+    e:
+      qn0d2cmu2q006mmgza1azn81rj3zv7z1:
+        os: Linux-5.15.0-136-generic-x86_64-with-glibc2.31
+        python: CPython 3.11.10
+        started_at: '2026-02-09T04:35:05.161740Z'
+        args:
+        - --hv.initial-peers
+        - /ip4/11.11.30.4/tcp/30006/p2p/QmXBMybgigs6nt5xYMok8cqNR2tghR8YFoivSUuq6MnFmS
+        - --sharding-strategy
+        - NO_SHARD
+        - --per-device-train-batch-size
+        - '32'
+        - --precision
+        - bf16-mixed
+        - --total-batch-size
+        - '512'
+        - --hv.local-steps
+        - '500'
+        - --total-steps
+        - '88_000'
+        - --project
+        - OpenDiLoCocom
+        - --hv.skip_load_from_peers
+        - --lr
+        - 4e-4
+        - --path-model
+        - /home/zwsllmprj/data/DiLoCo/llama/llama-150m-fresh
+        - --log-activations-steps
+        - '250'
+        - --ckpt.interval
+        - '4975'
+        - --ckpt.path
+        - 9900_ckpt
+        - --hv.world-rank
+        - '0'
+        - --hv.galaxy-size
+        - '2'
+        program: /home/zwsllmprj/data/DiLoCo/OpenDiLoCo/open_diloco/train_fsdp_sco.py
+        code_path: open_diloco/train_fsdp_sco.py
+        code_path_local: train_fsdp_sco.py
+        git:
+          remote_url: https://github.com/PrimeIntellect-ai/OpenDiLoCo.git
+          commit: a5b7236b269da58276c819098015169d24c3e6d9
+        root: /home/zwsllmprj/data/DiLoCo/OpenDiLoCo/open_diloco
+        host: test-NF5280-M7-A0-R0-00
+        executable: /home/zwsllmprj/anaconda3/envs/OpenDiLoCo/bin/python
+        cpu_count: 104
+        cpu_count_logical: 208
+        gpu_type: NVIDIA A800 80GB PCIe
+        gpu_count: 4
+        disk:
+          /:
+            total: '470855794688'
+            used: '422234353664'
+        memory:
+          total: '1622932856832'
+        gpu_nvidia:
+        - name: NVIDIA A800 80GB PCIe
+          memory_total: '85899345920'
+          cuda_cores: 6912
+          architecture: Ampere
+          uuid: GPU-17aef94e-168b-8d72-e109-b3da54aa5333
+        - name: NVIDIA A800 80GB PCIe
+          memory_total: '85899345920'
+          cuda_cores: 6912
+          architecture: Ampere
+          uuid: GPU-38e0ac27-b046-93d9-f2ea-803ad32eb880
+        - name: NVIDIA A800 80GB PCIe
+          memory_total: '85899345920'
+          cuda_cores: 6912
+          architecture: Ampere
+          uuid: GPU-0297cd44-6287-09b9-8634-c69054306294
+        - name: NVIDIA A800 80GB PCIe
+          memory_total: '85899345920'
+          cuda_cores: 6912
+          architecture: Ampere
+          uuid: GPU-e1d1dcea-3df4-2cd7-fa13-7d396bc36719
+        cuda_version: '12.7'
+        writer_id: qn0d2cmu2q006mmgza1azn81rj3zv7z1
+path_model:
+  desc: null
+  value: /home/zwsllmprj/data/DiLoCo/llama/llama-150m-fresh
+torch_compile:
+  desc: null
+  value: true
+attn_implementation:
+  desc: null
+  value: sdpa
+dataset_name_or_path:
+  desc: null
+  value: /home/zwsllmprj/data/DiLoCo/llama
+seq_length:
+  desc: null
+  value: 1024
+c4_tiny:
+  desc: null
+  value: false
+num_workers:
+  desc: null
+  value: 4
+lr:
+  desc: null
+  value: 0.0004
+total_batch_size:
+  desc: null
+  value: 512
+per_device_train_batch_size:
+  desc: null
+  value: 32
+warmup_steps:
+  desc: null
+  value: 1000
+total_steps:
+  desc: null
+  value: 88000
+sharding_strategy:
+  desc: null
+  value: NO_SHARD
+precision:
+  desc: null
+  value: bf16-mixed
+project:
+  desc: null
+  value: OpenDiLoCocom
+metric_logger_type:
+  desc: null
+  value: wandb
+log_activations_steps:
+  desc: null
+  value: 250
+ckpt:
+  desc: null
+  value:
+    resume: null
+    interval: 4975
+    path: 9900_ckpt
+    topk: null
+hv:
+  desc: null
+  value:
+    outer_lr: 0.7
+    local_steps: 500
+    initial_peers:
+    - /ip4/11.11.30.4/tcp/30006/p2p/QmXBMybgigs6nt5xYMok8cqNR2tghR8YFoivSUuq6MnFmS
+    host_maddrs:
+    - /ip4/0.0.0.0/tcp/0
+    announce_maddrs: null
+    matchmaking_time: null
+    averaging_timeout: null
+    hivemind_compression: null
+    all_reduce_strategy: WAIT_FOR_ALL
+    timeout_waiting_for_peers: null
+    skip_load_from_peers: true
+    world_rank: 0
+    galaxy_size: 2
+    fail_rank_drop: false
+    use_scaffold: false
+    scaffold_num_clients_total: null
+fake_data:
+  desc: null
+  value: false
+max_steps:
+  desc: null
+  value: null
